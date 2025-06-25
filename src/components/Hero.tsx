@@ -1,6 +1,6 @@
 import React from 'react';
 import { ChevronDown, Download, Mail } from 'lucide-react';
-
+import photoMe from '../img/dp.jpg'
 const Hero: React.FC = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -22,7 +22,9 @@ const Hero: React.FC = () => {
           <div className="mb-8 relative">
             <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-blue-600 to-purple-600 p-1 animate-float">
               <div className="w-full h-full rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-4xl font-bold text-gray-600 dark:text-gray-300">
-                JL
+                <img src={photoMe}
+                className=' rounded-full'
+                />
               </div>
             </div>   
           </div>
